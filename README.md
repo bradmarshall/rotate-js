@@ -9,7 +9,7 @@ You can have as many testimonials as you like.
 
 ### MARKUP
 
-Create the HTML structure. The script looks a series of adjacent items (typically divs)
+Create the HTML structure. The script looks for a series of adjacent items (typically divs)
 in a container element (div.rotating-items).
 
 <pre><code>
@@ -42,3 +42,8 @@ On DOM ready, define the config object and init the rotator class.
 		rotator.init();
 	}
 </code></pre>
+
+### CSS
+
+Rotate.js comes with an extremely basic stylesheet (resources/styles.css) that handles positioning
+and animating of the panel containers. Feel free to override.
