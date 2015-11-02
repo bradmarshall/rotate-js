@@ -1,0 +1,32 @@
+
+
+div.rotating-items {
+	position: relative;
+}
+
+div.rotating-items div {
+	z-index: 1;
+	opacity: 0;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	-webkit-transition: 400ms opacity ease-out;
+	-moz-transition: 	400ms opacity ease-out;
+	transition: 		400ms opacity ease-out;
+}
+
+div.rotating-items div.active {
+	z-index: 2;
+	opacity: 1;
+
+	-webkit-transition: 400ms 800ms opacity ease-out;
+	-moz-transition: 	400ms 800ms opacity ease-out;
+	transition: 		400ms 800ms opacity ease-out;
+}

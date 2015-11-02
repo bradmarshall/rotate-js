@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+			section {
+				text-align: center;
+			}
+		</style>
+
+		<link rel="stylesheet" type="text/css" href="resources/styles.css" media="screen">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="rotate.js"></script>
+	</head>
+	<body>
+		<h1>Rotate.js Demo</h1>
+
+		<section>
+			<h2>Our customers include</h2>
+
+			<div class="rotating-items">
+				<div>
+					<img src="resources/logos/adobe.png">
+					<img src="resources/logos/itunes.png">
+					<img src="resources/logos/facebook.png">
+				</div>
+				<div>
+					<img src="resources/logos/blogger.png">
+					<img src="resources/logos/ebay.png">
+					<img src="resources/logos/twitter.png">
+				</div>
+				<div>
+					<img src="resources/logos/youtube.png">
+					<img src="resources/logos/yahoo.png">
+					<img src="resources/logos/blogger.png">
+				</div>
+			</div>
+		</section>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var rotator = new Rotator();
+
+				// A config object must be created before initing the rotator class.
+				rotator.config = {
+					// How fast to rotate the items, in milliseconds.
+					"displayInterval" : 3000,
+					// The order in which the item panels will animate.
+					"animateOrder" : rotator.ANIMATEORDER_SEQUENTIAL,
+					// A CSS/querySelector path to the item elements (in this case a set of divs).
+					"items" : $("div.rotating-items > div")
+				}
+
+				rotator.init();
+			});
+		</script>
+	</body>
+</html>
