@@ -1,16 +1,15 @@
 # rotate-js
 A small script for rotating multiple items.
 
-Rotating Testimonials
----------------------
+# Rotating Testimonials
+
 Animates multiple items within a container. Each item is a div that can contain
 any type/amount of content. Items are rotated with a fade in/out animation.
 You can have as many testimonials as you like.
 
-Usage
------
+## Usage
 
-MARKUP:
+### MARKUP
 
 Create the HTML structure. The script looks a series of adjacent items (typically divs)
 in a container element (div.rotating-items).
@@ -24,7 +23,7 @@ in a container element (div.rotating-items).
 &lt;/div&gt;
 </code></pre>
 
-JAVASCRIPT:
+### JAVASCRIPT
 
 On DOM ready, define the config object and init the rotator class.
 
