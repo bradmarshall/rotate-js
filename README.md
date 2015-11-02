@@ -1,8 +1,6 @@
 # rotate-js
 A small script for rotating multiple items.
 
-# Rotating Testimonials
-
 Animates multiple items within a container. Each item is a div that can contain
 any type/amount of content. Items are rotated with a fade in/out animation.
 You can have as many testimonials as you like.
